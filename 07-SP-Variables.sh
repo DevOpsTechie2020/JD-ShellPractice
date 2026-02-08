@@ -1,7 +1,7 @@
 #!/bin/bash
 echo "All args passed to script: $@"
 echo "Number of variables passed to script: $#"
-scho "script name: $0"
+echo "script name: $0"
 echo "present directory: $PWD"
 echo "who is running: $USER"
 echo "Home directory of current user: $HOME"
