@@ -1,3 +1,9 @@
 #!/bin/bash
-person=$1
-echo "Hi $person, Welcome to Dive2Devops journey"
+number=$1
+if [ $number -gt 20 ]; then
+    echo "$number is greater than 20"
+elif [ $number -eq 20 ]; then
+    echo "$number is equal to 20"
+else
+    echo "$number is less than 20"
+fi
