@@ -7,8 +7,8 @@
 #     echo "You are running this script with root user access"
 # fi
 
-echo "installing niginxx"
-dnf install nginx -y
+echo "installing njsdkjs"
+dnf install niginxxx -y
 
 if [ $? -ne 0 ]; then
     echo "Nginx installation is failure"
