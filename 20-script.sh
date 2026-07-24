@@ -1,2 +1,3 @@
 #!/bin/bash
-echo "Hi pavan, Welcome to Dive2Devops journey"
+person=pavan
+echo "Hi $person, Welcome to Dive2Devops journey"
