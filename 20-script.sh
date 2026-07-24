@@ -8,31 +8,31 @@ else
 fi
 
 echo "Installing nginx"
-dnf install nginx -y
+dnf remove nginx -y
 
 if [ $? -ne 0 ]; then
-    echo "Nginx installation is failure"
+    echo "Nginx uninstallation is failure"
     exit 1
 else
-    echo "Nginx installation is success"
+    echo "Nginx uninstallation is success"
 fi
 
 echo "Installing mqsql"
-dnf install mysql -y
+dnf remove mysql -y
 
 if [ $? -ne 0 ]; then
-    echo "mysql installation is failure"
+    echo "mysql uninstallation is failure"
     exit 1
 else
-    echo "mysql installation is success"
+    echo "mysql uninstallation is success"
 fi
 
 echo "Installing nodejs"
-dnf install nodejs -y
+dnf remove nodejs -y
 
 if [ $? -ne 0 ]; then
-    echo "Nodejs installation is failure"
+    echo "Nodejs uninstallation is failure"
     exit 1
 else
-    echo "Nodejs installation is success"
+    echo "Nodejs uninstallation is success"
 fi
