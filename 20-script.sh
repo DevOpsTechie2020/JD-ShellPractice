@@ -1,9 +1,7 @@
-#!/bin/bash
-number=$1
-if [ $number -gt 20 ]; then
-    echo "$number is greater than 20"
-elif [ $number -eq 20 ]; then
-    echo "$number is equal to 20"
+userid=$(id -u)
+if [ userid -ne 0]; then
+    echo "please run this script with root user access"
+    exit 1
 else
-    echo "$number is less than 20"
+    echo "You are running this script with root user access"
 fi
